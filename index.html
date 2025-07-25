@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relieve | Conoce y Entiende tu Terreno en Puerto Rico</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Geist Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/variable.css" />
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Geist Sans', sans-serif;
+            background-color: #f8f9fa; /* Un gris muy claro para el fondo */
+            color: #212529; /* Negro suave para el texto */
+        }
+        .accent-color {
+            background-color: #0077b6; /* Un azul corporativo como acento */
+            color: white;
+        }
+        .accent-color-hover:hover {
+            background-color: #023e8a;
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 600;
+            line-height: 2.5rem; /* 40px */
+            letter-spacing: -0.025em;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            color: #6c757d; /* Gris secundario para subtítulos */
+            max-width: 60ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Relieve</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600">Servicios</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-blue-600">Testimonios</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600">Preguntas</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-600">Contacto</a>
+            </div>
+            <a href="#contacto" class="hidden md:block accent-color accent-color-hover text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300">
+                Solicitar Análisis
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="hero" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tighter">
+                    Antes de comprar un terreno, <br class="hidden md:block"> <span class="text-blue-600">entiéndelo y conócelo.</span>
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
+                    Relieve te brinda la información crucial sobre cualquier terreno en Puerto Rico para que tomes decisiones con total confianza y seguridad.
+                </p>
+                <div class="mt-10">
+                    <a href="#contacto" class="accent-color accent-color-hover text-white font-bold py-4 px-8 rounded-lg text-lg shadow-xl transform hover:scale-105 transition-all duration-300">
+                        Solicita tu Análisis de Terreno
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Conoce y Entiende el Terreno" Section (Servicios) -->
+        <section id="servicios" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Conoce y Entiende el Terreno</h2>
+                    <p class="section-subtitle mt-4">
+                        Nuestro servicio integral de análisis de terrenos te proporciona todos los datos que necesitas, ya seas comprador, vendedor, ambientalista, académico o planificador.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1: Topografía -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="mountain"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Topografía</h3>
+                        <p class="text-gray-600">Visualiza el relieve, las pendientes y la forma exacta de tu terreno para entender su potencial y sus desafíos.</p>
+                    </div>
+                    <!-- Feature 2: Clasificación y Calificación -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Clasificación y Calificación</h3>
+                        <p class="text-gray-600">Conoce el uso de suelo permitido (residencial, comercial, agrícola, etc.) y evita sorpresas regulatorias.</p>
+                    </div>
+                    <!-- Feature 3: Elevaciones y Contornos -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="area-chart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Elevaciones y Contornos</h3>
+                        <p class="text-gray-600">Obtén mapas de contorno precisos que detallan las variaciones de elevación en toda la propiedad.</p>
+                    </div>
+                    <!-- Feature 4: Límites y Colindancias -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="square-dashed-bottom-code"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Límites y Fronteras</h3>
+                        <p class="text-gray-600">Define con claridad las fronteras de la propiedad y conoce tus colindancias exactas para evitar disputas.</p>
+                    </div>
+                    <!-- Feature 5: Cuerpos de Agua -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="waves"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Cuerpos de Agua</h3>
+                        <p class="text-gray-600">Identifica ríos, quebradas, y zonas inundables. Fundamental para la planificación y seguridad de tu proyecto.</p>
+                    </div>
+                    <!-- Feature 6: Permisología -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="file-check-2"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Análisis de Permisos</h3>
+                        <p class="text-gray-600">Te orientamos sobre la viabilidad de permisos de construcción y desarrollo según la zonificación del terreno.</p>
+                    </div>
+                    <!-- Feature 7: Cartografía -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="map"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Cartografía Detallada</h3>
+                        <p class="text-gray-600">Generamos mapas topográficos y cartográficos personalizados para tus proyectos académicos, ambientales o de planificación.</p>
+                    </div>
+                     <!-- Feature 8: Tipo de Suelo -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <i data-lucide="test-tube-2"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Tipo de Suelo</h3>
+                        <p class="text-gray-600">Analizamos la composición del suelo, un factor clave para la agricultura, la construcción y la estabilidad del terreno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Image Placeholder Section -->
+        <section id="galeria" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Visualiza el Potencial</h2>
+                    <p class="section-subtitle mt-4">Aquí puedes añadir imágenes de mapas, topografías o proyectos realizados.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Placeholder para tu imagen -->
+                    <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center text-gray-500">
+                        <i data-lucide="image" class="w-16 h-16"></i>
+                    </div>
+                    <!-- Placeholder para tu imagen -->
+                    <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center text-gray-500">
+                        <i data-lucide="image" class="w-16 h-16"></i>
+                    </div>
+                    <!-- Placeholder para tu imagen -->
+                    <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center text-gray-500">
+                        <i data-lucide="image" class="w-16 h-16"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Decisiones Informadas, Clientes Satisfechos</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Testimonio 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <p class="text-gray-700 italic">"El análisis de Relieve fue clave. Íbamos a comprar un terreno que parecía perfecto, pero su informe nos mostró que estaba en una zona con riesgo de deslizamiento. Nos ahorraron un problema enorme."</p>
+                        <p class="mt-4 font-semibold text-right">- Familia Pérez, Compradores</p>
+                    </div>
+                    <!-- Testimonio 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <p class="text-gray-700 italic">"Como ambientalista, uso los mapas de Relieve para mis investigaciones de campo. La precisión de los datos de contorno y cuerpos de agua es fundamental para mi trabajo de conservación."</p>
+                        <p class="mt-4 font-semibold text-right">- Dr. Alejandro Ríos, Biólogo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden">
+                        <button class="faq-toggle w-full text-left p-5 font-semibold text-lg flex justify-between items-center">
+                            ¿Cómo puedo saber qué puedo construir en mi terreno?
+                            <i data-lucide="chevron-down" class="faq-icon transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">La clave está en la **calificación y clasificación del suelo**. Nuestro informe te detallará la zonificación asignada por la Junta de Planificación de Puerto Rico. Esto determina si el uso permitido es residencial (y de qué densidad), comercial, industrial, agrícola o de conservación. Con esta información, sabrás exactamente qué tipo de proyectos son viables y cuáles no, antes de invertir tiempo y dinero.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden">
+                        <button class="faq-toggle w-full text-left p-5 font-semibold text-lg flex justify-between items-center">
+                            ¿Cómo puedo entender la topografía de un terreno?
+                            <i data-lucide="chevron-down" class="faq-icon transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">La topografía se entiende mejor a través de los **mapas de contorno y modelos de elevación**. Nuestros mapas muestran líneas que unen puntos de igual altitud. Cuando las líneas están muy juntas, significa que la pendiente es pronunciada. Cuando están separadas, el terreno es más llano. Te proveemos mapas 2D y visualizaciones que te permitirán "ver" el relieve del terreno de forma intuitiva, identificando las zonas más altas, las más bajas y las pendientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contacto" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="section-title">Obtén tu Análisis de Terreno</h2>
+                    <p class="section-subtitle mt-4">Completa el formulario con la información del terreno de tu interés y te contactaremos a la brevedad.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-200">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                                <input type="text" name="nombre" id="nombre" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                                <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="pueblo" class="block text-sm font-medium text-gray-700">Pueblo / Municipio</label>
+                            <input type="text" name="pueblo" id="pueblo" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mt-6">
+                            <label for="catastro" class="block text-sm font-medium text-gray-700">Número de Catastro o Coordenadas</label>
+                            <input type="text" name="catastro" id="catastro" placeholder="Ej: 123-456-789-01-001 o 18.2208° N, 66.5901° W" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mt-8 text-center">
+                            <button type="submit" class="w-full accent-color accent-color-hover text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                                Enviar Solicitud
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>© 2025 Relieve. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Análisis de terrenos en todo Puerto Rico.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // FAQ Accordion Logic
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    // Close other open FAQs
+                    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+                    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
